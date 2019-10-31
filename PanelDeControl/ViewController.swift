@@ -76,6 +76,8 @@ class ViewController: UIViewController {
         
         if sender.text! != "" {
             listaAcciones.text.append(sender.text!+"\n")
+            sender.text = ""
+            
         }
         sender.resignFirstResponder()
     }
